@@ -127,13 +127,25 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  fill: #757575;
 }
+
 .mail-link:hover,
 .tel-link:hover,
 .mail-link:focus,
 .tel-link:focus {
   color: var(--link-hover-color);
+  fill: var(--link-hover-color);
 }
+
+.mail-link::before {
+}
+
+.button-envelope,
+.button-phone {
+  margin-right: 10px;
+}
+
 .header-hero {
   color: #ffffff;
   margin: 0px auto 30px auto;
@@ -217,10 +229,6 @@ img {
   background-color: #ffffff;
 }
 
-.button-phone:hover {
-  fill: #2196f3;
-}
-
 .list.item:not(:last-child) {
   margin-right: 8px;
 }
@@ -289,7 +297,7 @@ img {
 .works-images .list:last-child {
   margin-right: 0;
 }
-
+/* -----------------Advantages--------------------------- */
 .advantages-text {
   color: var(--second-text-color);
   font-size: 14px;
@@ -297,6 +305,29 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+.our-adv-link {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  fill: rgba(175, 177, 184, 1);
+}
+
+.our-adv-list {
+  display: flex;
+  justify-content: center;
+}
+
+.our-adv-item + .our-adv-item {
+  margin-left: 30px;
+}
+
+.our-adv-item {
+  margin-bottom: 30px;
 }
 
 .header-works {
@@ -356,7 +387,7 @@ img {
   margin-bottom: 50px;
   text-align: center;
 }
-
+/* ---------------------Footer-------------------- */
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -389,6 +420,33 @@ img {
 .tel:hover {
   color: var(--link-hover-color);
 }
+
+.conect-soc-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: rgb(255, 255, 255);
+}
+
+.conect-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.conect-soc-item + .conect-soc-item {
+  margin-left: 10px;
+}
+
+.conect-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 /*--------------------- Our team--------------------- */
 .team-position {
   color: var(--second-text-color);
