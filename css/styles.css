@@ -437,6 +437,10 @@ img {
   justify-content: center;
 }
 
+.conect-soc-link:hover {
+  background-color: #2196f3;
+}
+
 .conect-soc-item + .conect-soc-item {
   margin-left: 10px;
 }
