@@ -100,10 +100,13 @@ img {
 .site-nav .current {
   color: var(--link-hover-color);
 }
-
 .contacts {
   display: flex;
   margin-left: auto;
+}
+
+.footer .container {
+  display: flex;
 }
 
 .contacts .list + .list {
@@ -136,9 +139,6 @@ img {
 .tel-link:focus {
   color: var(--link-hover-color);
   fill: var(--link-hover-color);
-}
-
-.mail-link::before {
 }
 
 .button-envelope,
@@ -445,6 +445,20 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.conect {
+  display: flex;
+  margin-left: 70px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
 }
 
 /*--------------------- Our team--------------------- */
