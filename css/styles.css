@@ -105,10 +105,12 @@ img {
 .contacts {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .contacts .list + .list {
@@ -176,6 +178,7 @@ img {
     url(..//images/hero-Img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0 0;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -441,7 +444,8 @@ img {
   justify-content: center;
 }
 
-.conect-soc-link:hover {
+.conect-soc-link:hover,
+.conect-soc-link:focus {
   background-color: var(--link-hover-color);
 }
 
@@ -499,6 +503,12 @@ img {
   fill: rgba(175, 177, 184, 1);
 }
 
+.member-soc-link:hover,
+.member-soc-link:focus {
+  background-color: var(--link-hover-color);
+  fill: var(--background-text-color);
+}
+
 .member-soc-list {
   display: flex;
   justify-content: center;
@@ -506,12 +516,6 @@ img {
 
 .member-soc-item + .member-soc-item {
   margin-left: 10px;
-}
-
-.member-soc-link:hover,
-.member-soc-link:active {
-  background-color: var(--link-hover-color);
-  fill: var(--background-text-color);
 }
 
 .card-content {
@@ -543,7 +547,12 @@ img {
   padding: 20px 24px 20px 24px;
 }
 
-.project-card:hover {
+.project-link {
+  display: block;
+}
+
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     1px 4px 6px 0 rgba(0, 0, 0, 0.16);
 }
@@ -591,7 +600,7 @@ img {
 }
 
 .our-partners-link:hover,
-.our-partners-link:active {
+.our-partners-link:focus {
   fill: var(--link-hover-color);
   border: 1px solid var(--link-hover-color);
 }
